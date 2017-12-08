@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BFDrawerNavigation</string>
+
+    <!-- Common -->
+    <string name="BFTAG">BFTAG</string>
+
 </resources>

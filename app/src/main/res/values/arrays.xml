@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="drawer_menu_str">
+        <item>menu1</item>
+        <item>menu2</item>
+        <item>menu3</item>
+        <item>menu4</item>
+        <item>menu5</item>
+        <item>menu6</item>
+        <item>menu1</item>
+        <item>menu2</item>
+        <item>menu3</item>
+        <item>menu4</item>
+        <item>menu5</item>
+        <item>menu6</item>
+        <item>menu1</item>
+        <item>menu2</item>
+        <item>menu3</item>
+        <item>menu4</item>
+        <item>menu5</item>
+        <item>menu6</item>
+    </array>
+</resources>
