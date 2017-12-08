@@ -4,62 +4,14 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent">-->
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:text="主内容"-->
-            <!--android:gravity="center"/>-->
-    <!--</LinearLayout>-->
 
-    <!--<LinearLayout-->
-        <!--android:layout_width="250dp"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_gravity="start"-->
-        <!--android:background="#a12">-->
-
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:gravity="center"-->
-            <!--android:text="左侧抽屉内容"/>-->
-
-    <!--</LinearLayout>-->
-
-    <!--<LinearLayout-->
-        <!--android:layout_width="250dp"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_gravity="end"-->
-        <!--android:background="#abc">-->
-
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:gravity="center"-->
-            <!--android:text="右侧抽屉内容"/>-->
-
-    <!--</LinearLayout>-->
-
-    <!-- 主内容 -->
-    <!--<fragment-->
-        <!--android:id="@+id/dn_main_fragment"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"/>-->
-
-    <LinearLayout
+    <!--Main Content View-->
+    <FrameLayout
+        android:id="@+id/content_frame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="主内容!"
-        android:gravity="center"/>
-    </LinearLayout>
+        android:layout_height="match_parent"></FrameLayout>
 
-     <!-- 左侧菜单 -->
+     <!-- the navigation drawer -->
     <ListView
         android:id="@+id/left_menu"
         android:layout_width="250dp"

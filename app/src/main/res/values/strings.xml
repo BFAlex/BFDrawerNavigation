@@ -3,5 +3,7 @@
 
     <!-- Common -->
     <string name="BFTAG">BFTAG</string>
+    <string name="drawer_open">open drawer</string>
+    <string name="drawer_close">close drawer</string>
 
 </resources>
