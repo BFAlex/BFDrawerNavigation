@@ -9,13 +9,15 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.bf.bfdrawernavigation.R;
 
 /**
- * Created by 1 on 2017/12/8.
+ * Created by BFAlex on 2017/12/8.
  */
 
 public class BFDrawerNavigationActivity extends Activity {
@@ -35,6 +37,7 @@ public class BFDrawerNavigationActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawer_navigation);
+
         this.findViews();
         this.setupDefaultData();
         this.setupLeftMenu();
@@ -61,6 +64,7 @@ public class BFDrawerNavigationActivity extends Activity {
         /*添加点击事件*/
         leftMenu.setOnItemClickListener(new DrawerItemClickListener());
 
+        /*给DrawerLayout添加触发器*/
         drawerToggle = new ActionBarDrawerToggle(this, drawerLayout,
                 null,
                 R.string.drawer_open,
@@ -81,7 +85,6 @@ public class BFDrawerNavigationActivity extends Activity {
         drawerLayout.addDrawerListener(drawerToggle);
     }
 
-
     private void selectItem(int index) {
         Log.d(BFTag, "点击item对应的索引号:" + index);
     }
@@ -92,6 +95,9 @@ public class BFDrawerNavigationActivity extends Activity {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
             selectItem(i);
+            String toastMsg = "点击item:"+(i+1)+"";
+            Toast.makeText(BFDrawerNavigationActivity.this, toastMsg, Toast.LENGTH_LONG).show();
+            drawerLayout.closeDrawer(leftMenu);
         }
     }
 }
